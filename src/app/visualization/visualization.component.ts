@@ -37,6 +37,7 @@ export class VisualizationComponent implements OnInit {
 
   ngOnInit() {
     this.devRawGitUrl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.baseUrl);
+
   }
 
 }
