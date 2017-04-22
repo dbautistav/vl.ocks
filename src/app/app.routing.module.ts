@@ -4,9 +4,10 @@ import { RouterModule, Routes } from "@angular/router";
 import { VlContentComponent, VlContentResolverService } from "./vl-content";
 
 const appRoutes: Routes = [
+  //  TODO: create a "home" route/component
   {
     component: VlContentComponent,
-    path: "",
+    path: ":id",
     resolve: {
       data: VlContentResolverService,
     },
