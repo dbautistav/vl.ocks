@@ -15,7 +15,7 @@ const appRoutes: Routes = [
   {
     path: "**",
     pathMatch: "full",
-    redirectTo: "",
+    redirectTo: "3686329aa6e1f5938df8eef12ec353fe",
   },
 ];
 

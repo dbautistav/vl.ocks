@@ -11,7 +11,8 @@ export class GistService {
 
   getGistData(gistId: string): Promise<any> {
     this.url = `https://api.github.com/gists/${gistId}`;
-    return this.http.get(this.url)
+    const headers = new Headers({'Content-Type': 'application/json'});
+    return this.http.get(this.url, headers)
       .toPromise()
       .then(response => response.json())
       .catch(this.handleError);
